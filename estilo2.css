@@ -338,6 +338,29 @@ p {
 	height: 420px;
 }
 
+.cajaproy {
+	width: 210px;
+	height: 220px;
+	background-color: grey;
+	opacity: 0.7;
+
+}
+
+.cajaproy h6 {
+	font-size: 14px;
+	color: #fff;
+	font-family: sans-serif;
+	opacity: 1;
+
+}
+
+.cajaproy p {
+	font-size: 12px;
+	color: #fff;
+	font-family: sans-serif;
+	opacity: 1;
+}
+
 
 
 
