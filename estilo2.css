@@ -1,0 +1,579 @@
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	
+	font-size: 20px;
+}
+
+/* MENU*/
+.nav {
+	background-color:#2f2f2e;
+	height: 77px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+}
+
+.logo {
+	height: 70px;
+	width: 100px;
+}
+
+.logo img {
+	object-fit: cover;
+}
+
+.nav__ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__li {
+	padding: 4px;
+	color: #fff;
+	margin: 0 20px;
+	width: 115px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.asoc {
+	background-color: #FF6B66;
+	color: #fff;
+	font-weight: 900;
+	padding-bottom: 20px;
+	padding-top: 16px;
+	border-top: none;
+	border-radius: 5px;
+}
+
+.nav__li:hover > a {
+	color: #FF6B66;
+}
+
+.nav__li:hover {
+	color: #FF6B66;
+	border-top: 4px solid #FF6B66;
+}
+
+
+.nav__li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+
+}
+
+.nav__li i {
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 20px;
+}
+
+
+h4 {
+	font-family: 'Monserrat', sans-serif;
+	font-size: 40px;
+}
+
+p {
+	font-family: 'Monserrat', sans-serif;
+}
+
+/* PORTADA */
+.caja1 {
+	border: 0;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(la-olla-es-popular.png);
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+	opacity: 1;
+	filter:contrast(50%);
+	filter:brightness(50%)
+}
+
+
+
+.caja1 img {
+	height: 100%;
+	width: 100%;
+	object-fit:fill;
+	
+}
+
+.caja1-t {
+	display: inline-block;
+	width: 100%;
+	height: 600px;
+	z-index: 10;
+	position: relative;
+	top: 200px;
+	margin-left: 50px;
+}
+
+.caja1-t h1 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+	top: -100px;
+}
+
+.caja1-t p {
+	color: #fff;
+	font-size: 30px;
+}
+
+.caja1-t button {
+	background-color: #f4ce50; 
+	border: none;
+	color: white;
+	padding: 15px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 10px;
+	border-radius: 50px;
+}
+
+.caja1-t a {
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+}
+
+.caja1-t button:hover {
+	background-color: #FF6B66;
+}
+
+
+/* AYLLU TERRITORIO */
+
+.caja2 {
+	border: 0;
+	background: #fff;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+
+.c2-cajita1 {
+	width: 752px;
+	height: 384px;
+	background: #edce68;
+	display: block;
+	color: #2F2F2E;
+}
+
+.c2-cajita1 h4 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.c2-cajita1 p {
+	font-size: 18px;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	line-height: 1.8em;
+}
+
+.c2-cajita1 a {
+	font-size: 18px;
+	text-align: center;
+	margin-left: 45%;
+	line-height: 1.8em;
+	text-decoration: none;
+}
+
+.c2-cajita2 {
+	width: 442px;
+	height: 384PX;
+	background: #e3dcb6;
+	color: #2F2F2E;
+	display: block;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	
+}
+
+.c2-cajita2 p {
+	font-size: 15px;
+	font-family: sans-serif;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+.separadorId {
+	color: #e3dcb6;
+	border-bottom: 1px solid #2F2F2E;
+
+}
+
+.queHacemo {
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+
+
+/* SEPARADOR */
+
+.caja3 {
+	border: 0;
+	background: #fff;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.caja31 {
+	border: 0;
+	background: #e3dcb6;
+	width: 980px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.caja31 p {
+	color: #000;
+	font-size: 18px;
+}
+
+
+
+/* PROYECTOS */
+
+.caja4 {
+	border: 0;
+	background: #fff;
+	width: 100%;
+	height: 1000px;
+}
+
+.caja4 h4 {
+	margin: 20px;
+}
+
+.linea1 {
+	width: 100%;
+	height: 100px ;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.linea2 {
+	width: 100%;
+	height: 470px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.proy1{
+	background-image: url(construccion.webp);
+	background-size: cover;
+	width: 306px;
+	height: 420px;
+}
+
+.proy2{
+	background-image: url(ollasgrandes.webp);
+	background-size: cover;
+	width: 306px;
+	height: 420px;
+}
+
+.proy3{
+	background-image: url(paisaje.webp);
+	width: 306px;
+	height: 420px;
+}
+
+.proy4{
+	background-image: url(comedor.webp);
+	width: 306px;
+	height: 420px;
+}
+
+.proy5{
+	background-image: url(paisaje2.webp);
+	width: 306px;
+	height: 420px;
+}
+
+.proy6{
+	background-image: url(naranjas.webp);
+	width: 306px;
+	height: 420px;
+}
+
+
+
+
+/* SITUACION CORDOBA */
+
+.caja5 {
+	border: 0;
+	background: #fff;
+	width: 100%;
+	height: 585px;
+	
+}
+
+.linea15 {
+	height: 140px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lineaDatos {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.dato {
+	width: 200px;
+	height: 270px ;
+	background-color: #fff;
+}
+
+.titCirculo {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.dato p {
+	font-size: 16px;
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.circulo {
+	background-color: rgb(142, 55, 44);
+	height: 145px;
+	width: 145px;
+	border-radius: 100%;
+	font-size: 55px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 30px;
+}
+
+.caja5 img {
+	margin-left: 13.737%;
+}
+
+
+/* FOOTER */
+
+.foot {
+	border: 0;
+	background: #2f2f2e;
+	width: 100%;
+	height: 260px;
+	display: flex;
+}
+
+.textoFoot {
+	height: 100%;
+	width: 400px;
+	margin-left: 220px;
+	display: flex;
+	align-items: center;
+}
+
+.textoFoot p {
+	font-size: 14px;
+	color: #fff;
+}
+
+.contenedor-iconos {
+	display: flex;
+	align-items: center;
+	margin-left: 450px;
+}
+
+.contenedor-iconos a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	margin: 10px;
+	justify-content: space-between;
+}
+
+
+/* PAGINA NOSOTRXS ------------------------------------------------------------------ */
+
+.aylluConteiner {
+	width: 100%;
+	height: 2540px;
+	background-color: grey;
+	display: block;
+}
+
+.aylluPrincipal {
+	width: 90%;
+	height: 1300px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+.aylluTitulo {
+	width: 550px;
+	height: 90px;
+	font-family: sans-serif;
+	font-size: 30px;
+	color: #A38935;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 25%;
+	padding-top: 10px;
+	border-bottom: 1px solid rgba(40, 38, 38, 1) ;
+}
+
+.aylluEpigrafe {
+	width: 700px;
+	height: 120px;
+	color: #2F2F2E;
+	margin-left: 20%;
+}
+
+.aylluEpigrafe p {
+	font-size: 15px;
+	line-height: 1.8em;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.aylluFoto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aylluNotaVideo {
+	width: 300px;
+	height: 190px;
+	background-color: rgb(163, 137, 53);
+	margin-left: 20px;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.aylluNotaVideo p {
+	font-size: 15px;
+	line-height: 1.4em;
+	font-family: sans-serif;
+	text-align: center;
+	color: #EAEAE8;
+}
+
+.aylluHyO {
+	margin-left: 10%;
+}
+
+.aylluListado {
+	margin-left: 10%;
+	width: 740px;
+
+}
+
+.aylluCarrusel {
+	width: 90%;
+	height: 400px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: greenyellow;
+}
+
+.aylluDona {
+	width: 90%;
+	height: 400px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #fff;
+	display: flex;
+	text-align: center;
+}
+
+.aylluDonaText {
+	margin-left: 18%;
+	margin-top: 5%;
+}
+
+.aylluDona p {
+	width: 290px;
+}
+
+
+.aylluDona button {
+	background-color: #f4ce50; 
+	border: none;
+	color: white;
+	padding: 15px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 10px;
+	border-radius: 50px;
+}
+
+.aylluDonaFoto {
+	margin-top: 5%;
+	margin-left: 30px;
+}
+
+/* PAGINA PROYECTOS ------------------------------------------------------------------ */
+
+
+
+/* PAGINA QUIERO SER PARTE ------------------------------------------------------------------ */
+
+/* PAGINA BLOG ------------------------------------------------------------------ */
+
+/* PAGINA CONTACTO ------------------------------------------------------------------ */
+
+
