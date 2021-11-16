@@ -305,6 +305,9 @@ p {
 	background-size: cover;
 	width: 306px;
 	height: 420px;
+	display: flex;
+	justify-items: flex-start;
+	align-items: flex-end;
 }
 
 .proy2{
@@ -312,37 +315,52 @@ p {
 	background-size: cover;
 	width: 306px;
 	height: 420px;
+	display: flex;
+	justify-items: flex-start;
+	align-items: flex-end;
 }
 
 .proy3{
 	background-image: url(paisaje.webp);
 	width: 306px;
 	height: 420px;
+	display: flex;
+	justify-items: flex-start;
+	align-items: flex-end;
 }
 
 .proy4{
 	background-image: url(comedor.webp);
 	width: 306px;
 	height: 420px;
+	display: flex;
+	justify-items: flex-start;
+	align-items: flex-end;
 }
 
 .proy5{
 	background-image: url(paisaje2.webp);
 	width: 306px;
 	height: 420px;
+	display: flex;
+	justify-items: flex-start;
+	align-items: flex-end;
 }
 
 .proy6{
 	background-image: url(naranjas.webp);
 	width: 306px;
 	height: 420px;
+	display: flex;
+	justify-items: flex-start;
+	align-items: flex-end;
 }
 
 .cajaproy {
 	width: 210px;
 	height: 220px;
 	background-color: grey;
-	opacity: 0.7;
+	opacity: 0.9;
 
 }
 
@@ -351,7 +369,8 @@ p {
 	color: #fff;
 	font-family: sans-serif;
 	opacity: 1;
-
+	margin-top: 2%;
+	margin-left: 2%;
 }
 
 .cajaproy p {
@@ -359,6 +378,10 @@ p {
 	color: #fff;
 	font-family: sans-serif;
 	opacity: 1;
+	margin-top: 10%;
+	margin-right: 2%;
+	margin-left: 2%;
+	
 }
 
 
@@ -594,6 +617,58 @@ p {
 
 
 /* PAGINA QUIERO SER PARTE ------------------------------------------------------------------ */
+
+.bloqueSumate {
+	background-color: grey;
+	width: 100%;
+}
+
+.impacto {
+	width: 90%;
+	height: 500px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #fff;
+}
+
+.impacto h4 {
+	font-size: 23px;
+	text-align: center;
+	line-height: 1.2em;
+	color: #2F2F2E;
+}
+
+.sec1Circulos {
+	width: 100%;
+	height: 45%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.sec2Circulos {
+	width: 100%;
+	height: 45%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.circuloImpacto {
+	width: 130px;
+	height: 130px;
+	background-color: rgb(244, 206, 80);
+	border-style: 4px solid rgb(244, 206, 80);
+	border-radius: 100%;
+}
+
+.seccionDonacion {
+	width: 90%;
+	height: 500px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: yellow;
+}
 
 /* PAGINA BLOG ------------------------------------------------------------------ */
 
