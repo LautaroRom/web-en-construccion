@@ -43,22 +43,22 @@
 }
 
 .asoc {
-	background-color: #FF6B66;
+	background-color: #f4ce50;
 	color: #fff;
 	font-weight: 900;
 	padding-bottom: 20px;
 	padding-top: 16px;
 	border-top: none;
-	border-radius: 5px;
+	border-radius: 50px;
 }
 
 .nav__li:hover > a {
-	color: #FF6B66;
+	color: #f4ce50;
 }
 
 .nav__li:hover {
-	color: #FF6B66;
-	border-top: 4px solid #FF6B66;
+	color: #f4ce50;
+	border-top: 4px solid #f4ce50;
 }
 
 
@@ -673,5 +673,22 @@ p {
 /* PAGINA BLOG ------------------------------------------------------------------ */
 
 /* PAGINA CONTACTO ------------------------------------------------------------------ */
+
+.seccionContactanos {
+	background-image: url(fondoCalle.webp);
+}
+
+.seccionAmarilla {
+	width: 80%;
+	height: 700px;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: rgba(237, 206, 104, 0.81);
+}
+
+
+
+
+
 
 
