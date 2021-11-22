@@ -386,6 +386,19 @@ p {
     /*border-radius: 20px;*/
 }
 
+.grey__card {
+	width: 184px;
+	height: 150px;
+	background-color: grey;
+	opacity: 0.9;
+	margin-top: 60%;
+	perspective: 1000px;
+    transform-style: preserve-3d;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+
 .body__card_back{
     padding: 40px;
     text-align: center;
