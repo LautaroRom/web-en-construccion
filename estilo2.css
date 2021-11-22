@@ -273,7 +273,7 @@ p {
 .caja31 {
 	border: 0;
 	background: #e3dcb6;
-	width: 1000px;
+	width: 1015px;
 	height: 60px;
 	display: flex;
 	align-items: center;
@@ -319,9 +319,102 @@ p {
 	height: 470px;
 	display: flex;
 	justify-content: center;
-	gap: 3%;
+	perspective: 1000px;
+	flex-wrap: wrap;
 }
 
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 306px;
+    height: 420px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    /*border-radius: 20px;*/
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: #edce68;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    /*border-radius: 20px;*/
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    /*border-radius: 10px;*/
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+}
+
+/*
 .proy1{
 	background-image: url(construccion.webp);
 	background-size: cover;
@@ -408,7 +501,7 @@ p {
 	margin-left: 2%;
 	
 }
-
+*/
 
 
 
@@ -418,7 +511,7 @@ p {
 	border: 0;
 	background: #fff;
 	width: 100%;
-	height: 585px;
+	height: 620px;
 	
 }
 
@@ -428,6 +521,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 10px;
 }
 
 .linea15 h4 {
