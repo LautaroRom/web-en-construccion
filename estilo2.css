@@ -12,10 +12,9 @@
 
 /* MENU*/
 .nav {
-	background-color:#2f2f2e;
+	background-color:#2f2f2e; 
 	height: 77px;
-	width: 100%;
-	
+	width: 100%;	
 	display: flex;/*
 	justify-content: space-around;
 	align-items: center;*/
@@ -273,7 +272,7 @@ p {
 .caja31 {
 	border: 0;
 	background: #e3dcb6;
-	width: 1000px;
+	width: 1015px;
 	height: 60px;
 	display: flex;
 	align-items: center;
@@ -319,9 +318,115 @@ p {
 	height: 470px;
 	display: flex;
 	justify-content: center;
-	gap: 3%;
+	perspective: 1000px;
+	flex-wrap: wrap;
 }
 
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 306px;
+    height: 420px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    /*border-radius: 20px;*/
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: #edce68;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    /*border-radius: 20px;*/
+}
+
+.grey__card {
+	width: 185px;
+	height: 150px;
+	background-color: grey;
+	opacity: 0.9;
+	margin-top: 60%;
+	perspective: 1000px;
+    transform-style: preserve-3d;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    /*border-radius: 10px;*/
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+}
+
+/*
 .proy1{
 	background-image: url(construccion.webp);
 	background-size: cover;
@@ -408,7 +513,7 @@ p {
 	margin-left: 2%;
 	
 }
-
+*/
 
 
 
@@ -418,7 +523,7 @@ p {
 	border: 0;
 	background: #fff;
 	width: 100%;
-	height: 585px;
+	height: 620px;
 	
 }
 
@@ -428,6 +533,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 10px;
 }
 
 .linea15 h4 {
@@ -494,34 +600,33 @@ p {
 	background: #2f2f2e;
 	width: 100%;
 	height: 260px;
-	display: flex;
 }
 
-.textoFoot {
-	height: 100%;
-	width: 400px;
-	margin-left: 220px;
-	display: flex;
-	align-items: center;
+.tituloFoot {
+	width: 100%;
+	height: 60px;		
 }
 
-.textoFoot p {
-	font-size: 14px;
-	color: #fff;
-}
 
 .contenedor-iconos {
+	width: 100%;
+	height: 200px;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	margin-left: 450px;
+}
+
+.lineaIconos {
+	width: 350px;
+	height: 50px;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .contenedor-iconos a {
 	text-decoration: none;
 	color: #fff;
-	font-size: 25px;
-	margin: 10px;
-	justify-content: space-between;
+	font-size: 17px;
 }
 
 
@@ -529,8 +634,8 @@ p {
 
 .aylluConteiner {
 	width: 100%;
-	height: 2540px;
-	background-color: grey;
+	height: auto;
+	background-color: #ebeae9;
 	display: block;
 }
 
@@ -561,12 +666,14 @@ p {
 	height: 120px;
 	color: #2F2F2E;
 	margin-left: 20%;
+	margin-bottom: 25px;
+	margin-top: 20px;
 }
 
 .aylluEpigrafe p {
-	font-size: 15px;
+	font-size: 17px;
 	line-height: 1.8em;
-	font-family: sans-serif;
+	font-family: 'Montserrat';
 	text-align: center;
 }
 
@@ -597,12 +704,62 @@ p {
 
 .aylluHyO {
 	margin-left: 10%;
+	height: 40px;
+	width: 300px;
+	background-color: #e3dcb6;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.aylluHyO h6{
+	font-size: 22px;
+	font-weight: 400;
+
 }
 
 .aylluListado {
 	margin-left: 10%;
-	width: 740px;
+	width: 900px;
+}
 
+.itemListado {
+	display: flex;
+	height: 100px;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.c-circulito {
+	width: 40px;
+	height: 100%;
+	margin-right: 1%;
+	display: flex;
+	align-items: center;
+}
+
+.circulito {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: 2px solid #2F2F2E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circulito p{
+	font-size: 35px;
+	color: #2F2F2E;
+}
+
+.aylluListado p{
+	font-size: 18px;
+	text-align: justify;
+	color: #2F2F2E;
+	line-height: 1.4em;
 }
 
 .aylluCarrusel {
@@ -610,7 +767,144 @@ p {
 	height: 400px;
 	margin-left: 5%;
 	margin-right: 5%;
-	background-color: greenyellow;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 80%;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotazas{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.foton{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.foton img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/*Movimiento a la izquierda*/
+#item-2:checked ~ .fotazas #selector-1,
+#item-1:checked ~ .fotazas #selector-6,
+#item-6:checked ~ .fotazas #selector-5,
+#item-5:checked ~ .fotazas #selector-4,
+#item-4:checked ~ .fotazas #selector-3,
+#item-3:checked ~ .fotazas #selector-2{
+    transform: translateX(-40%) scale(0.8);
+	filter: brightness(50%);
+    z-index: 0;
+}
+
+#item-2:checked ~ .fotazas #selector-6,
+#item-1:checked ~ .fotazas #selector-5,
+#item-6:checked ~ .fotazas #selector-4,
+#item-5:checked ~ .fotazas #selector-3,
+#item-4:checked ~ .fotazas #selector-2,
+#item-3:checked ~ .fotazas #selector-1{
+    transform: translateX(-60%) scale(0.6);
+    filter: brightness(20%);
+    z-index: -1;
+}
+
+#item-2:checked ~ .fotazas #selector-5,
+#item-1:checked ~ .fotazas #selector-4,
+#item-6:checked ~ .fotazas #selector-3,
+#item-5:checked ~ .fotazas #selector-2,
+#item-4:checked ~ .fotazas #selector-1,
+#item-3:checked ~ .fotazas #selector-6{
+    transform: translateX(60%) scale(0.4);
+    filter: brightness(10%);
+    z-index: -2;
+}
+
+/* movimiento a la Derecha*/
+#item-3:checked ~ .fotazas #selector-4,
+#item-4:checked ~ .fotazas #selector-5,
+#item-5:checked ~ .fotazas #selector-6,
+#item-6:checked ~ .fotazas #selector-1,
+#item-1:checked ~ .fotazas #selector-2,
+#item-2:checked ~ .fotazas #selector-3{
+    transform: translateX(40%) scale(0.8);
+    filter: brightness(50%);
+    z-index: 0;
+}
+
+#item-3:checked ~ .fotazas #selector-5,
+#item-4:checked ~ .fotazas #selector-6,
+#item-5:checked ~ .fotazas #selector-1,
+#item-6:checked ~ .fotazas #selector-2,
+#item-1:checked ~ .fotazas #selector-3,
+#item-2:checked ~ .fotazas #selector-4{
+    transform: translateX(60%) scale(0.6);
+    filter: brightness(20%);
+    z-index: -1;
+}
+
+#item-3:checked ~ .fotazas #selector-6,
+#item-4:checked ~ .fotazas #selector-1,
+#item-5:checked ~ .fotazas #selector-2,
+#item-6:checked ~ .fotazas #selector-3,
+#item-1:checked ~ .fotazas #selector-4,
+#item-2:checked ~ .fotazas #selector-5{
+    transform: translateX(-60%) scale(0.4);
+    filter: brightness(10%);
+    z-index: -2;
+}
+
+/*Sin movimiento*/
+#item-1:checked ~ .fotazas #selector-1,
+#item-2:checked ~ .fotazas #selector-2,
+#item-3:checked ~ .fotazas #selector-3,
+#item-4:checked ~ .fotazas #selector-4,
+#item-5:checked ~ .fotazas #selector-5,
+#item-6:checked ~ .fotazas #selector-6{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+
+.separadorNosotrxs {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+
+.separadorNosotrxs p{
+	border-bottom: 3px solid #2F2F2E;
 }
 
 .aylluDona {
@@ -630,10 +924,19 @@ p {
 
 .aylluDona p {
 	width: 290px;
+	font-family: 'Montserrat';
+	font-size: 20px;
+	line-height: 1.4em;
+}
+
+#mano {
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 1.3em;
 }
 
 
-.aylluDona button {
+.aylluDonaText button {
 	background-color: #f4ce50; 
 	border: none;
 	color: white;
@@ -645,6 +948,8 @@ p {
 	font-weight: 500;
 	margin-top: 10px;
 	border-radius: 50px;
+	text-decoration: none;
+	
 }
 
 .aylluDonaFoto {
@@ -661,6 +966,7 @@ p {
 .bloqueSumate {
 	background-color: grey;
 	width: 100%;
+	height: 100%;
 }
 
 .impacto {
@@ -683,23 +989,41 @@ p {
 	height: 45%;
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
+}
+
+.sec1Circulos p {
+	font-family: 'Montserrat';
+	font-size: 16px;
+	width: 235px;
+	margin-left: 2%;
 }
 
 .sec2Circulos {
 	width: 100%;
 	height: 45%;
 	display: flex;
-	justify-content: center;
-	align-content: center;
+	justify-content:center; 
+	align-items: center;
+}
+
+.sec2Circulos p{
+	font-family: 'Montserrat';
+	font-size: 16px;
+	width: 235px;
+	margin-left: 2%;
 }
 
 .circuloImpacto {
 	width: 130px;
 	height: 130px;
-	background-color: rgb(244, 206, 80);
-	border-style: 4px solid rgb(244, 206, 80);
+	background-color: white;
+	border: 4px solid rgb(244, 206, 80);
 	border-radius: 100%;
+	margin-left: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .seccionDonacion {
@@ -707,9 +1031,150 @@ p {
 	height: 500px;
 	margin-left: 5%;
 	margin-right: 5%;
-	background-color: yellow;
+	background-color: #fff;
+	border: 4px solid black;
 }
 
+.secTituloDonar {
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+}
+
+.formDonacion{
+	display: block;
+}
+
+.form-opciones{
+	display: flex;
+}
+
+.col-datos{
+	width: 45%;	
+}
+
+.col-datos p{
+	margin-bottom: 1%;
+	margin-left: 15%;
+}
+
+.col-datos input{
+	margin-bottom: 5%;
+	margin-left: 15%;
+	border-radius: 15px;
+}
+
+.col-donaciones {
+	display: flex;
+	width: 45%;
+}
+
+.col-donaciones input{
+	margin-top: 2%;
+	margin-bottom: 10%;
+	border-radius: 15px;
+	width: 200px;
+	height: 30px;
+}
+
+.col-donacion-unica{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.col-donacion-unica button {
+	height: 30px;
+	width: 90px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border: 3px solid rgb(244, 206, 80);
+	border-radius: 20px;
+	background-color: #fff;
+
+
+}
+
+.col-donacion-mensual{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.col-donacion-mensual button{
+	height: 30px;
+	width: 90px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border: 3px solid rgb(244, 206, 80);
+	border-radius: 20px;
+	background-color: #fff;
+
+
+}
+
+.boton-seccion-form{
+	display: block;
+	width: 100%;
+}
+
+.botonDonar {
+	width: 200px;
+	height: 30px;
+	margin-left: 60%;
+}
+
+.supra-seccionCorporativa{
+	background-color: grey;
+}
+
+.tituloCorporativo{
+	margin-left: 5%;
+	padding-left: 9%;
+	background-color: white;
+}
+.seccionCorporativa {
+	display: flex;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: white;
+
+}
+
+.secCorpDona{
+	width: 50%;
+	padding-left: 10%;
+	background-color: white;
+
+	
+}
+
+.botonCorp{
+	width: 280px;
+	height: 40px;
+	border: 3px solid rgb(244, 206, 80);
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2%;
+}
+
+.secCorpForm {
+	width: 40%;
+	height: 300px;
+	background-color: rgb(244, 206, 80);
+	padding-top: 1%;
+	border-radius: 40px;
+	padding-left: 2%;
+	margin-bottom: 5%;
+	background-color: white;
+
+}
 /* PAGINA BLOG ------------------------------------------------------------------ */
 
 /* PAGINA CONTACTO ------------------------------------------------------------------ */
@@ -724,11 +1189,62 @@ p {
 	margin-left: 10%;
 	margin-right: 10%;
 	background-color: rgba(237, 206, 104, 0.81);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.divTexto {
+	width: 40%;
+
+}
+
+.seccionAmarilla h4{
+	font-size: 20px;
+	font-weight: bold;
+	color: #2f2f2e;
+	margin-top: 30%;
+}
+
+.seccionAmarilla p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #2f2f2e;
+	margin-top: 5%;
 }
 
 
+.formContactanos {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.formContactanos p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #2f2f2e;
+	margin-bottom: 3%;
 
+}
 
+.formContactanos input{
+	border-radius: 15%;
+}
 
+.formContactanos textarea{
+	border-radius: 15%;
+}
+
+.parrafoForm {
+	width: 40%;
+}
+
+#nombreYapellido {
+	margin-left: 10%;
+}
+
+#mensaje {
+	margin-left: 10%;
+}
 
